@@ -150,7 +150,7 @@ html {
 		grid-template-columns: repeat(3, 1fr);
 	}
 	.grid-container.col-2 {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 2fr);
 	}
 	.grid-container.full {
 		grid-template-columns: 1fr;

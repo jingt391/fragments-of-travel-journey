@@ -3,24 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLOWER</title>
+    <title>Image with Subtitle</title>
     <style>
         body {
-            font-family: 'Aboreto', serif; 
-            text-align: center;
-            margin-top: 350px;
-            background-color: blanchedalmond; 
-            color: black; 
+            font-family: Arial, sans-serif;
         }
-        h2 {
-            font-size: 48px; 
-            font-weight:100; 
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .image {
+            flex: 1;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content {
+            flex: 2;
+            margin-left: 20px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
-    <h2>FLOWER</h2> 
+    <div class="container">
+        <div class="image">
+            <img src="images/interaction webobj1.jpg" alt="Flower Image">
+        </div>
+        <div class="content">
+            <h2>Flower</h2>
+            <p>This is the description of the flower. You can write any text here to provide more details about the flower, its beauty, and characteristics.</p>
+        </div>
+    </div>
 
 </body>
 </html>

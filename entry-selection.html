@@ -11,21 +11,23 @@
             background-color: blanchedalmond; 
             color: black; 
         }
-        .image-row {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0; 
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 20px; 
+            justify-items: center; 
+            margin: 20px; 
         }
-        .image-row img {
-            width: 800px; 
+        .image-grid img {
+            width: 180px; 
             height: auto;
-            margin: 0 30px; 
             cursor: pointer; 
             transition: transform 0.2s;
         }
-        .image-row img:hover {
+        .image-grid img:hover {
             transform: scale(1.05); 
         }
+
         .subtitle {
             margin-top: 1px; 
             font-size: 48px; 
@@ -51,8 +53,8 @@
 </head>
 <body>
 
-    <!-- Replace 'previous-page.html' with the actual URL of the previous page -->
-    <a href="previous-page.html" class="back-button">
+   
+    <a href="index.html" class="back-button">
         ← Back
     </a>
 
@@ -69,11 +71,41 @@
             <img src="images/entry-2-ticket.png" alt="Image 2">
             <p class="subtitle">Ticket</p> 
         </a>
-    </div>
-    </style>
-</head>
-<body>
+   <a href="entry-3.html">
+            <img src="images/entry-3-book.png" alt="Image 3">
+            <p class="subtitle">Book</p> 
+        </a>
+        <a href="entry-4.html">
+            <img src="images/entry-4-clock.png" alt="Image 4">
+            <p class="subtitle">Clock</p> 
+        </a>
+        <a href="entry-5.html">
+            <img src="images/entry-5-camera.png" alt="Image 5">
+            <p class="subtitle">Camera</p> 
+        </a>
 
-   
+        <!-- Second row of images -->
+        <a href="entry-6.html">
+            <img src="images/entry-6-mountain.png" alt="Image 6">
+            <p class="subtitle">Mountain</p> 
+        </a>
+        <a href="entry-7.html">
+            <img src="images/entry-7-bird.png" alt="Image 7">
+            <p class="subtitle">Bird</p> 
+        </a>
+        <a href="entry-8.html">
+            <img src="images/entry-8-tree.png" alt="Image 8">
+            <p class="subtitle">Tree</p> 
+        </a>
+        <a href="entry-9.html">
+            <img src="images/entry-9-car.png" alt="Image 9">
+            <p class="subtitle">Car</p> 
+        </a>
+        <a href="entry-10.html">
+            <img src="images/entry-10-lamp.png" alt="Image 10">
+            <p class="subtitle">Lamp</p> 
+        </a>
+    </div>
+
 </body>
 </html>

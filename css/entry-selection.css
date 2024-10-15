@@ -1,0 +1,53 @@
+
+body {
+    font-family: 'Aboreto', serif;
+    text-align: center;
+    background-color: rgb(217, 212, 206); 
+    color: black; 
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 5px; 
+    justify-items: center; 
+    margin: 2px; 
+}
+.image-grid img {
+    width: 220px; 
+    height: auto;
+    cursor: pointer; 
+    transition: transform 0.2s;
+    margin-top: 50px; 
+}
+.image-grid img:hover {
+    transform: scale(1.05); 
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.subtitle {
+    margin-top: -2px; 
+    font-size: 20px; 
+    color: #000000; 
+}
+.back-button {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    position: absolute;  
+    top: 20px;        
+    left: 20px;       
+}
+.back-button:hover {
+    background-color: darkgray;
+}

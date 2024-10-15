@@ -1,0 +1,78 @@
+body {
+    font-family: 'Aboreto', serif;
+    background-color: rgb(114, 182, 210); 
+    color: black; 
+    text-align: center;
+    overflow: hidden;
+}
+.back-button {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    position: absolute;  
+    top: 20px;        
+    left: 20px;       
+}
+.back-button:hover {
+    background-color: darkgray;
+}
+
+.text-box {
+    width: 20%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.image-flower {
+    width: 60%; 
+}
+
+.image-flower img {
+    width: 700px; 
+    height: auto;
+}
+
+content {
+    width: 70%; 
+}
+
+h1{
+    font-family: "aboreto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+p{
+
+}
+
+.back-button {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    position: absolute;  
+    top: 20px;        
+    left: 20px;       
+}
+.back-button:hover {
+    background-color: darkgray;
+}

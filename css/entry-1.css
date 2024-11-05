@@ -58,9 +58,6 @@ h1{
     font-size: 70px;
 }
 
-p{
-
-}
 
 .back-button {
     background-color: gray;
@@ -77,4 +74,13 @@ p{
 }
 .back-button:hover {
     background-color: darkgray;
+}
+
+/* CSS for the zoom-in hover effect */
+.image-flower img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.image-flower img:hover {
+    transform: scale(1.1); /* Scales the image up to 110% */
 }

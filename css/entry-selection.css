@@ -2,8 +2,8 @@
 body {
     font-family: 'Aboreto', serif;
     text-align: center;
-    background-color: rgb(217, 212, 206); 
-    color: black; 
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
 }
 .image-grid {
     display: grid;
@@ -33,11 +33,10 @@ a{
 .subtitle {
     margin-top: -2px; 
     font-size: 20px; 
-    color: #000000; 
+    color: #ffffff; 
 
 }
 .back-button {
-    background-color: gray;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -47,8 +46,21 @@ a{
     text-decoration: none;
     position: absolute;  
     top: 20px;        
-    left: 20px;       
+    left: 20px;   
+    margin-top :20px;    
+    margin-left:20px;
 }
-.back-button:hover {
-    background-color: darkgray;
+  .back-button:hover {
+    color: #acc4d7; /* Change color on hover */
+}
+.image-grid img {
+    /* Set the perspective to make the flip effect visible */
+    perspective: 1000px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Flip animation on hover */
+.image-grid img:hover {
+    transform: rotateY(180deg);
 }

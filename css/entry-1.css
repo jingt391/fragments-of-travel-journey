@@ -19,9 +19,6 @@ body {
     margin-top :20px;    
     margin-left:20px;    
 }
-.back-button:hover {
-    background-color: darkgray;
-}
 
 .text-box {
     width: 20%;
@@ -59,11 +56,11 @@ h1{
     font-weight: 400;
     font-style: normal;
     font-size: 70px;
+    margin-top: 150px;
+    margin-right: 180px;
 }
-
-
 .back-button:hover {
-    background-color: darkgray;
+    color: #acc4d7; 
 }
 
 /* CSS for the zoom-in hover effect */

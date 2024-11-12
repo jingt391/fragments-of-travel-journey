@@ -12,7 +12,7 @@ body {
     top: -25%;
 }
 
-@-webkit-keyframes cinematic {
+    @-webkit-keyframes cinematic {
     0% { transform: rotateZ(20deg); opacity: 1; }
     75% { opacity: 1; transform: rotateZ(0deg); }
     100% { transform: rotateZ(-10deg); opacity: 1; }
@@ -32,7 +32,7 @@ body {
     animation: zoom 10s forwards; 
 }
 
-@-webkit-keyframes zoom {
+    @-webkit-keyframes zoom {
     0% { opacity: 0; transform: scale(0.5) translateY(-50%); -webkit-filter: blur(10px); }
     7.5% { opacity: 1; transform: scale(1) translateY(-50%); -webkit-filter: none; }
     90% { -webkit-filter: none; opacity: 1; }

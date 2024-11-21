@@ -9,142 +9,54 @@
 </head>
 <body>
    
-    <a href="index.html" class="back-button">
-        ← Back
+    <a href="index.html" class="back-button">← Back</a>
     </a>
 
     </style>
 </head>
 <body>
-
     <div class="image-grid">
+       
         <a href="entry-1.html">
-            <img src="images/1 flower circle.png" alt="Image 1">
-            <p class="subtitle">Flower</p> 
+            <img src="images/1 flower circle.png" alt="Flower">
+            <p class="subtitle">Flower</p>
         </a>
         <a href="entry-2.html">
-            <img src="images/2 ticket circle_.png" alt="Image 2">
-            <p class="subtitle">Ticket</p> 
+            <img src="images/2 ticket circle_.png" alt="Ticket">
+            <p class="subtitle">Ticket</p>
         </a>
-   <a href="entry-3.html">
-            <img src="images/3 note circle.png" alt="Image 3">
-            <p class="subtitle">Note</p> 
+        <a href="entry-3.html">
+            <img src="images/3 note circle.png" alt="Note">
+            <p class="subtitle">Note</p>
         </a>
         <a href="entry-4.html">
-            <img src="images/4 rock circle.png" alt="Image 4">
-            <p class="subtitle">Rock</p> 
+            <img src="images/4 rock circle.png" alt="Rock">
+            <p class="subtitle">Rock</p>
         </a>
         <a href="entry-5.html">
-            <img src="images/5 coins circle.png" alt="Image 5">
-            <p class="subtitle">Coins</p> 
+            <img src="images/5 coins circle.png" alt="Coins">
+            <p class="subtitle">Coins</p>
         </a>
-
         <a href="entry-6.html">
-            <img src="images/6 cash circle.png" alt="Image 6">
-            <p class="subtitle">Cash</p> 
+            <img src="images/6 cash circle.png" alt="Cash">
+            <p class="subtitle">Cash</p>
         </a>
         <a href="entry-7.html">
-            <img src="images/entry-7-bird.png" alt="Image 7">
-            <p class="subtitle">Bird</p> 
+            <img src="images/entry-7-bird.png" alt="Bird">
+            <p class="subtitle">Bird</p>
         </a>
         <a href="entry-8.html">
-            <img src="images/entry-8-tree.png" alt="Image 8">
-            <p class="subtitle">Tree</p> 
+            <img src="images/entry-8-tree.png" alt="Tree">
+            <p class="subtitle">Tree</p>
         </a>
         <a href="entry-9.html">
-            <img src="images/entry-9-car.png" alt="Image 9">
-            <p class="subtitle">Car</p> 
+            <img src="images/entry-9-car.png" alt="Car">
+            <p class="subtitle">Car</p>
         </a>
         <a href="entry-10.html">
-            <img src="images/entry-10-lamp.png" alt="Image 10">
-            <p class="subtitle">Lamp</p> 
+            <img src="images/entry-10-lamp.png" alt="Lamp">
+            <p class="subtitle">Lamp</p>
         </a>
     </div>
-  <!-- JavaScript code starts here -->
-
-
-  <script>
-    var c = document.getElementById('mycanvas');
-    var $ = c.getContext('2d');
-    var t = 0;
-    var image = document.getElementById('galaxy'); // Ensure the galaxy image exists in the HTML or remove this line if not used
-    c.height = window.innerHeight * 1.5;
-    c.width = window.innerWidth;
-    var w = c.width, h = c.height;
-    var arr = [];
-    var num = 300;
-    var i = 0;
-    generate(700);
-
-    function generate(q) {
-        for (var i = 0; i < q; i++) {
-            arr.push({
-                x: (Math.random() * 2 * w),
-                y: (Math.random() * 2 * h),
-                len: Math.max((Math.random() * 3), 0.5),
-                alpha: 0.8
-            });
-        }
-    }
-
-    function regenerate(a) {
-        var n = arr[a];
-        n.x = (Math.random() * w);
-        n.y = (Math.random() * h);
-        n.len = Math.max((Math.random() * 2), 0.5);
-        n.alpha = 0.8;
-    }
-
-    function paint(a) {
-        var n = arr[a];
-        var radgrad = $.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.len * 8);
-        radgrad.addColorStop(0, `hsla(${a}, 90%, 50%, 1)`);
-        radgrad.addColorStop(0.25, `hsla(${a}, 90%, 50%, 0.25)`);
-        radgrad.addColorStop(0.5, `hsla(${a}, 90%, 50%, 0.05)`);
-        radgrad.addColorStop(1, `hsla(${a}, 90%, 50%, 0)`);
-
-        $.fillStyle = radgrad;
-        $.beginPath();
-        $.arc(n.x, n.y, n.len * 8, 0, 2 * Math.PI);
-        $.closePath();
-        $.fill();
-
-        $.fillStyle = `hsla(${a}, 90%, 60%, 0.8)`;
-        $.beginPath();
-        $.arc(n.x, n.y, n.len, 0, 2 * Math.PI);
-        $.closePath();
-        $.fill();
-    }
-
-    function move(a) {
-        var n = arr[a];
-        n.x += Math.sin((n.x / w) * 2 * Math.PI) * 2 * Math.max(Math.abs(1.5 * Math.sin(t * 0.125 * Math.PI)), 1) * n.len;
-        n.y += Math.sin((n.y / h) * 2 * Math.PI) * 2 * Math.max(Math.abs(1.5 * Math.sin(t * 0.125 * Math.PI)), 1) * n.len;
-        n.alpha = Math.sin((Math.abs(n.x - (w / 2))) / (w / 2) * Math.PI);
-        if (n.alpha <= 0.01) regenerate(a);
-    }
-
-    function go() {
-        $.fillStyle = "rgba(0,0,0,0.9)";
-        $.fillRect(0, 0, w, h);
-        for (var i = 0; i < arr.length; i++) {
-            paint(i);
-            move(i);
-        }
-    }
-
-    window.setInterval(function() {
-        t += 0.01;
-    }, 10);
-
-    function init() {
-        window.requestAnimationFrame(init);
-        go();
-    }
-
-    init();
-</script>
-<!-- JavaScript code ends here -->
-
 </body>
 </html>

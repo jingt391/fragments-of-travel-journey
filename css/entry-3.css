@@ -1,12 +1,11 @@
 body {
     font-family: 'Aboreto', serif;
-    background-color: rgb(241, 232, 219); 
-    color: black; 
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
     text-align: center;
     overflow: hidden;
 }
 .back-button {
-    background-color: gray;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -16,10 +15,12 @@ body {
     text-decoration: none;
     position: absolute;  
     top: 20px;        
-    left: 20px;       
-}
+    left: 20px;   
+    margin-top :20px;    
+    margin-left:20px;     
+} 
 .back-button:hover {
-    background-color: darkgray;
+    background-color: rgb(0, 0, 0);
 }
 
 .text-box {
@@ -55,24 +56,14 @@ h1{
     font-style: normal;
     font-size: 70px;
 }
-
-p{
-
-}
-
-.back-button {
-    background-color: gray;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    text-decoration: none;
-    position: absolute;  
-    top: 20px;        
-    left: 20px;       
-}
 .back-button:hover {
-    background-color: darkgray;
+    color: #acc4d7; 
+}
+/* CSS for the zoom-in hover effect */
+.image-flower img {
+    transition: transform 0.1s ease; /* Smooth transition */
+}
+
+.image-flower img:hover {
+    transform: scale(1.1); /* Scales the image up to 110% */
 }

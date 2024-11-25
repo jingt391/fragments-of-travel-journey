@@ -1,0 +1,112 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+body {
+    font-family: 'Aboreto', serif;
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    overflow: hidden;
+ 
+}
+.back-button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    position: absolute;  
+    top: 20px;        
+    left: 20px;   
+    margin-top :20px;    
+    margin-left:20px;  
+    z-index: 2;
+}
+
+.text-box {
+    width: 20%;
+    margin: 20px auto;
+    margin-right: 20px;
+    margin-left: 800px;
+    text-align: left;
+    margin-top: 600px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.image-flower {
+    width: 50%; 
+}
+
+
+.image-flower img {
+    margin-top: 10px;
+    width: 999px; 
+    height: auto;
+    margin-top: 2px;
+    
+}
+
+content {
+    width: 70%; 
+}
+
+h1{
+    font-family: 'Aboreto', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-right: 180px;
+    font-size: 100px; 
+}
+
+p {
+    font-size: 25px; 
+    line-height: 2.5; 
+    font-weight: 300; 
+    margin-top: 100px;
+    font-family: 'Cormorant', serif;
+}
+
+
+.back-button:hover {
+    color: #acc4d7; 
+}
+
+.image-flower img {
+    transition: transform 0.1s ease;
+}
+
+.image-flower img:hover {
+    transform: scale(1.1); 
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.content {
+    margin-top: 120px; 
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+.booklet-title {
+    font-family: 'Aboreto', serif;
+    font-size: 36px;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
+}

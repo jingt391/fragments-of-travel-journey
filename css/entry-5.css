@@ -4,6 +4,7 @@ body {
     color: rgb(255, 255, 255); 
     text-align: center;
     overflow: hidden;
+ 
 }
 .back-button {
     color: white;
@@ -17,16 +18,17 @@ body {
     top: 20px;        
     left: 20px;   
     margin-top :20px;    
-    margin-left:20px;    
-}
-.back-button:hover {
-    background-color: rgb(0, 0, 0);
+    margin-left:20px;  
+    z-index: 2;
 }
 
 .text-box {
     width: 20%;
     margin: 20px auto;
+    margin-right: 20px;
+    margin-left: 800px;
     text-align: left;
+    margin-top: 90px;
 }
 
 .container {
@@ -38,12 +40,16 @@ body {
 }
 
 .image-flower {
-    width: 60%; 
+    width: 50%; 
 }
 
+
 .image-flower img {
-    width: 700px; 
+    margin-top: 10px;
+    width: 990px; 
     height: auto;
+    margin-top: 2px;
+    
 }
 
 content {
@@ -54,16 +60,30 @@ h1{
     font-family: "aboreto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 70px;  
+    font-size: 70px;
+    margin-top: 10px;
+    margin-right: 180px;
+    font-size: 100px; 
 }
+
+p {
+    font-size: 25px; 
+    line-height: 2.5; 
+    font-family: 'Cormorant', serif;
+    font-weight: 300; 
+    margin-top: 30px;
+}
+
+
 .back-button:hover {
     color: #acc4d7; 
 }
-/* CSS for the zoom-in hover effect */
+
 .image-flower img {
-    transition: transform 0.1s ease; /* Smooth transition */
+    transition: transform 0.1s ease;
 }
 
 .image-flower img:hover {
-    transform: scale(1.1); /* Scales the image up to 110% */
+    transform: scale(1.1); 
 }
+

@@ -23,6 +23,8 @@ body {
 .text-box {
     width: 20%;
     margin: 20px auto;
+    margin-right: 20px;
+    margin-left: 800px;
     text-align: left;
     margin-top: 90px;
 }
@@ -42,7 +44,7 @@ body {
 
 .image-flower img {
     margin-top: 50px;
-    width: 600px; 
+    width: 770px; 
     height: auto;
     
 }
@@ -63,11 +65,22 @@ h1{
     color: #acc4d7; 
 }
 
-/* CSS for the zoom-in hover effect */
 .image-flower img {
-    transition: transform 0.1s ease; /* Smooth transition */
+    transition: transform 0.1s ease;
 }
 
 .image-flower img:hover {
-    transform: scale(1.1); /* Scales the image up to 110% */
+    transform: scale(1.1); 
 }
+
+h1 {
+    font-size: 100px; 
+}
+
+p {
+    font-size: 25px; 
+    line-height: 2.5; 
+    font-family: 'Cormorant', serif;
+    font-weight: 300; 
+}
+

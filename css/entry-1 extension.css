@@ -1,11 +1,11 @@
-/* Import Aboreto font from Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
-/* General body styling */
+
 body {
-    font-family: 'Aboreto', serif; /* Apply Aboreto font */
-    font-size: 20px; /* Increase the font size */
-    line-height: 1.8; /* Optional: improves readability */
+    font-family: 'Aboreto', serif; 
+    font-size: 20px; 
+    line-height: 1.8; 
     margin: 0;
     padding: 0;
     background-color: #000000;
@@ -31,17 +31,17 @@ body {
     color: #acc4d7; 
 }
 
-/* Image styling */
+
 img {
-    width: 90%; /* Adjust for responsiveness */
-    max-width: 580px; /* Ensures the image doesn't grow too large */
+    width: 90%; 
+    max-width: 580px; 
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
 }
 
-/* Text box styling */
+
 .text-box {
     background-color: #000000;
     padding: 20px;
@@ -53,7 +53,7 @@ img {
     text-align: center;
 }
 
-/* Unordered list styling */
+
 .text-box ul {
     list-style-type: none;
     padding: 0;
@@ -61,6 +61,6 @@ img {
 
 .text-box li {
     margin: 10px 0;
-    font-size: 18px; /* Adjust text size here */
+    font-size: 18px; 
     font-weight: 500;
 }
